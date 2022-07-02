@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Jiarui (Jerry) Wu
 
 You can use the [editor on GitHub](https://github.com/jwu114/jwu114.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
 
