@@ -1,4 +1,4 @@
-<p><img src="./res/photo.jpg" width = 10% height = 10% align=center />)</p>
+<p><img src="./res/photo.jpg" width = 10% height = 10% align=center /></p>
 ## Jiarui Wu
 
 You can use the [editor on GitHub](https://github.com/jwu114/jwu114.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
