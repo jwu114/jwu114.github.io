@@ -1,6 +1,6 @@
 ## => Site Settings
 ##############################
-text_skin: "forest"
+text_skin: "default"
 highlight_theme: "tomorrow-night-blue"
 url     : https://jwu114.github.io
 baseurl : # does not include hostname
