@@ -1,7 +1,7 @@
 ## => Site Settings
 ##############################
-text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+text_skin: "forest"
+highlight_theme: "tomorrow-night-blue"
 url     : https://jwu114.github.io
 baseurl : # does not include hostname
 title   : Jiarui Wu
