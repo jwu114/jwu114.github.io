@@ -12,17 +12,16 @@ description: >
 ## => Language and Timezone
 ##############################
 lang: en
-timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
-
+timezone: America/New_York
 
 ## => Author and Social
 ##############################
 author:
   type      : "person"
   name      : Jiarui Wu
-  url       : https://jwu114.github.io/
+  url       : 
   avatar    : https://github.com/jwu114/jwu114.github.io/blob/main/res/photo.jpg
-  bio       : 
+  bio       : Student of the University of Rochester
   email     : jwu114@u.rochester.edu
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
