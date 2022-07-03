@@ -1,7 +1,7 @@
 ## => Site Settings
 ##############################
-text_skin: "default"
-highlight_theme: "tomorrow-night-blue"
+text_skin: default
+highlight_theme: default
 url     : https://jwu114.github.io
 baseurl : # does not include hostname
 title   : Jiarui Wu
@@ -17,7 +17,7 @@ timezone: America/New_York
 ## => Author and Social
 ##############################
 author:
-  type      : "person"
+  type      : person
   name      : Jiarui Wu
   url       : 
   avatar    : https://github.com/jwu114/jwu114.github.io/blob/main/res/photo.jpg
@@ -38,7 +38,7 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
+repository: jwu114/jwu114.github.io
 repository_tree: master
 
 
@@ -47,7 +47,7 @@ repository_tree: master
 paths:
   root    : # title link url, "/" (default)
   home    : # home layout url, "/" (default)
-  archive : # "/archive.html" (default)
+  project : # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
 
 
