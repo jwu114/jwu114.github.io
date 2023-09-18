@@ -16,6 +16,6 @@ export default defineConfig({
           { title: 'Contact', children: [{title: 'jwu114@u.rochester.edu'},{title: 'w670699337@gmail.com'}]}],
   },
   base: 'jwu114.github.io',
-  publicPath: '/jwu114.github.io/',
+  publicPath: '/',
   exportStatic: {},
 });
