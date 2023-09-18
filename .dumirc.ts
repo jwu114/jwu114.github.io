@@ -15,7 +15,7 @@ export default defineConfig({
     nav: [{ title: 'Projects', link: 'projects' },
           { title: 'Contact', children: [{title: 'jwu114@u.rochester.edu'},{title: 'w670699337@gmail.com'}]}],
   },
-  base: '/',
-  publicPath: '/jwu114.github.io/',
+  base: 'jwu114.github.io/',
+  publicPath: 'jwu114.github.io/',
   exportStatic: {},
 });
