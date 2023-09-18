@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmyapp=self.webpackChunkmyapp||[]).push([[904],{17904:function(r,n,t){t.r(n),t.d(n,{default:function(){return u}});var e=t(62435),a=t(86074),u=function(s){var l=s.src,i=s.alt,c=s.width,d=s.title;return(0,a.jsxs)("div",{className:"feature",children:[(0,a.jsx)("img",{src:l,alt:i,width:c}),(0,a.jsxs)("p",{children:[" ",d," "]})]})}}}]);
