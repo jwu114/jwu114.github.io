@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmyapp=self.webpackChunkmyapp||[]).push([[606],{40606:function(m,n,a){a.r(n),a.d(n,{default:function(){return u}});var r=a(62435),s=a(86074),u=function(t){var l=t.src,c=t.alt,d=t.width;return(0,s.jsx)("img",{className:"darkable-img",src:l,alt:c,width:d})}}}]);
