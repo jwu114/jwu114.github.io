@@ -16,6 +16,6 @@ export default defineConfig({
     nav: [{ title: 'Projects', link: '/projects' },
           { title: 'Contact', children: [{title: 'jwu114@u.rochester.edu'},{title: 'w670699337@gmail.com'}]}],
   },
-  base: process.env.NODE_ENV === 'production' ? `./${repo}/` : `/`,
-  publicPath: process.env.NODE_ENV === 'production' ? `./${repo}/` : `/`
+  base: `/${repo}/`,
+  publicPath: `/${repo}/`
 });
