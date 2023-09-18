@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmyapp=self.webpackChunkmyapp||[]).push([[448],{65149:function(v,n,e){e.r(n),e.d(n,{default:function(){return r}});var a=e(11550),m=e(62435),o=function(){var u=(0,a.UO)(),d=u.id,s=(0,a.WF)(),c=s.demos,f=c[d]||{},t=f.component;return t&&(0,m.createElement)(t)},r=o}}]);
