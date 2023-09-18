@@ -1,13 +1,6 @@
 import { defineConfig } from 'dumi';
 
-const defaultPath = '/jwu114.github.io'
-const baseUrl = process.env.NODE_ENV === 'production' ? defaultPath : '/';
-
-const logo = `${baseUrl}/logo.png`;
-
 export default defineConfig({
-  base: defaultPath,
-  publicPath: `${baseUrl}/`,
   themeConfig: {
     editLink: false,
     logo: '/logo.png',
