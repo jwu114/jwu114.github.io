@@ -11,7 +11,7 @@ jobs:
 
         steps:
             - name: checkout code
-              uses: actions/checkout@v1
+              uses: actions/checkout@v2
             - name: Use Node.js
               uses: actions/setup-node@v1
               with:
@@ -21,7 +21,7 @@ jobs:
                 npm install
                 npm run build
             - name: Deploy to Github
-              uses: JamesIves/github-pages-deploy-action@v4.4.3
+              uses: peaceiris/actions-gh-pages@v3
               with:
-                branch: build
-                folder: dist
+                github_token: ${{ secrets.ACTION_TOKEN }}
+                publish_dir: ./dist
