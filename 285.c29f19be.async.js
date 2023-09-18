@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmyapp=self.webpackChunkmyapp||[]).push([[285],{5285:function(c,r,n){n.r(r),n.d(r,{default:function(){return u}});var h=n(62435),t=n(86074),u=function(s){var a=s.href;return(0,t.jsx)("div",{className:"anchor-button",children:(0,t.jsx)("a",{href:a,children:(0,t.jsx)("img",{src:"scrolldown_btn.png",width:"25px",alt:"button"})})})}}}]);
