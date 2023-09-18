@@ -16,7 +16,7 @@ jobs:
                 npm install
                 npm run build
             - name: Deploy to Github
-              uses: peaceiris/actions-gh-pages@v3
+              uses: JamesIves/github-pages-deploy-action@v4.4.3
               with:
-                github_token: ${{ secrets.GITHUB_TOKEN }}
-                publish_dir: ./dist
+                branch: build
+                folder: dist
