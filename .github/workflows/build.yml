@@ -1,0 +1,22 @@
+name: Deploy to GitHub Page
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout code
+              uses: actions/checkout@v3
+            - name: Build Project
+              run: |
+                npm install
+                npm run build
+            - name: Deploy to Github
+              uses: JamesIves/github-pages-deploy-action@v4.4.3
+              with:
+                branch: build
+                folder: dist
