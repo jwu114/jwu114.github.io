@@ -21,7 +21,7 @@ jobs:
                 npm install
                 npm run build
             - name: Deploy to Github
-              uses: JamesIves/github-pages-deploy-action@4.0.0
+              uses: JamesIves/github-pages-deploy-action@v4.4.1
               with:
                 branch: build
                 folder: dist
