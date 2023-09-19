@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmyapp=self.webpackChunkmyapp||[]).push([[357],{65357:function(e,t,n){n.r(t),n.d(t,{default:function(){return u}});var l=n(62435),s=n(86074),u=function(a){var r=a.text;return(0,s.jsx)("div",{className:"intro-box",style:{},children:(0,s.jsxs)("p",{children:[" ",r," "]})})}}}]);
