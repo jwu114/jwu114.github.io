@@ -29,7 +29,7 @@ import Feature from '../../src/Feature/index';
 
 export default () =>
 <div style={{marginBottom: '30px'}}> 
-    <Feature src='unibook/home.png' alt='home' width='80%' title='Home Page'/>
+    <Feature src='/unibook/home.png' alt='home' width='80%' title='Home Page'/>
     <Feature src='unibook/search.png' alt='search' width='80%' title='Search Page'/>
     <Feature src='unibook/login.png' alt='login' width='80%' title='Login Page'/>
     <Feature src='unibook/register.png' alt='register' width='80%' title='Register Page'/>
