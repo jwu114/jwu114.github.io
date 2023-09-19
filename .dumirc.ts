@@ -4,6 +4,6 @@ export default defineConfig({
   themeConfig: {
     name: 'test',
   },
-  base: '/jwu114.github.io/jwu114.github.io/',
-  publicPath: '/jwu114.github.io/jwu114.github.io/',
+  base: '/jerry-portfolio/',
+  publicPath: '/jerry-portfolio/',
 });

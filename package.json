@@ -18,7 +18,7 @@
       "@commitlint/config-conventional"
     ]
   },
-  "homepage": "https://jwu114.github.io/",
+  "homepage": "https://jwu114.github.io/jerry-portfolio/",
   "private": false,
   "lint-staged": {
     "*.{md,json}": [
