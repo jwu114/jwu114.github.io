@@ -15,6 +15,7 @@ export default defineConfig({
     nav: [{ title: 'Projects', link: '/projects' },
           { title: 'Contact', children: [{title: 'jwu114@u.rochester.edu'},{title: 'w670699337@gmail.com'}]}],
   },
+  favicons: ['/jerry-portfolio/favicon.png'],
   locales: [{ id: 'en-US', name: 'English'}],
   base: '/jerry-portfolio/',
   publicPath: '/jerry-portfolio/',
