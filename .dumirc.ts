@@ -5,5 +5,5 @@ export default defineConfig({
     name: 'test',
   },
   base: './',
-  publicPath: '/jwu114.github.io/',
+  publicPath: 'jwu114.github.io/',
 });
