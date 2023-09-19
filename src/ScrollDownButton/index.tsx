@@ -18,7 +18,7 @@ const ScrollDownButton: FC<{ id: string }> = ({id}) => {
     return (
         <div className='scroll-down-button'>
             <button onClick = {scroll}> 
-                <img src='scrolldown_btn.png' width='25px' alt='button'/>
+                <img src='/portfolio/scrolldown_btn.png' width='25px' alt='button'/>
             </button>
         </div>
     );
