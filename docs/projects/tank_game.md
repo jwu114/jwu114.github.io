@@ -30,7 +30,7 @@ import React from 'react';
 export default () =>
 <div style={{marginTop: '30px', marginBottom: '90px', textAlign: 'center'}}> 
     <video width="70%" height="40%" controls >
-      <source src='tank/demo.mp4' type="video/mp4"/>
+      <source src='/tank/demo.mp4' type="video/mp4"/>
     </video>
 </div>
 ```
