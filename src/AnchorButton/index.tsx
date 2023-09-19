@@ -4,7 +4,7 @@ import './index.less';
 export default ({ href }: { href: string }) =>
   <div className='anchor-button'>
     <a href={href}>
-      <img src='scrolldown_btn.png' width='25px' alt='button'/>
+      <img src='/portfolio/scrolldown_btn.png' width='25px' alt='button'/>
     </a>
   </div>
   
