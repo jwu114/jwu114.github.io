@@ -18,6 +18,6 @@ export default defineConfig({
   favicons: ['/jerry-portfolio/favicon.ico'],
   locales: [{ id: 'en-US', name: 'English'}],
   base: '/portfolio',
-  publicPath: '/portfolio/',
+  publicPath: '/jwu114.github.io/portfolio/',
   exportStatic: {},
 });
