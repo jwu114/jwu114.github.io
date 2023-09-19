@@ -32,15 +32,15 @@ export default () =>
         <img src='bnds_top.png' alt='high school logo' width='200px'/>
       </li>
       <li>
-        <DarkableImage src='bnds_bottom.png' alt='high school logo' width='200px'/>
+        <DarkableImage src='/portfolio/bnds_bottom.png' alt='high school logo' width='200px'/>
       </li>
     </ul>
     <p style={{float: 'left', margin:'35px 50px', width:'65%', lineHeight: '2'}}> In 2021, I graduated from Beijing National Day School. It was the place where I began to learn computer science and programming. I took Mathematics, Physics, English, Chinese, Business, and Computer Science courses and completed the International Baccalaureate Diploma Programme (IBDP) here in three years. </p>
   </div>
   <div style={{overflow: 'hidden', marginTop: '50px', marginLeft:'200px', marginRight:'200px', marginBottom: '60px'}}> 
-    <img style={{float: 'left'}} src='uofr_logo.png' alt='college logo' width='200px'/>
+    <img style={{float: 'left'}} src='/portfolio/uofr_logo.png' alt='college logo' width='200px'/>
     <p style={{float: 'left', margin:'20px 50px', width:'65%', lineHeight: '2'}}> I am the class of 2025 at the University of Rochester. As you know, I major in Computer Science and minor in Business here. I took positions in various technology organizations and worked as a Teaching Assistant. I love to learn from different experiences. Finally, I hope to have a great junior year! </p>
   </div>
-  <AnchorButton href='/projects'/>
+  <AnchorButton href='/portfolio/projects'/>
 </div>
 ```
