@@ -15,7 +15,7 @@ import AnchorButton from '../src/AnchorButton/index';
 export default () =>
 <div>
   <div style={{marginTop: '70px', marginBottom: '70px', textAlign: 'center'}}>
-    <img src='./avatar.png' alt='avatar' width='300px'/>
+    <img src='/portfolio/avatar.png' alt='avatar' width='300px'/>
     <h1> Jiarui Wu </h1>
     <p> CS Junior Student and Teaching Assistant @ University of Rochester</p>
     <ScrollDownButton id='about_me'/>

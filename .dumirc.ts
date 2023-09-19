@@ -3,7 +3,7 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   themeConfig: {
     editLink: false,
-    logo: '/jerry-portfolio/logo.png',
+    logo: '/portfolio/logo.png',
     lastUpdated: false,
     footer: `Copyright © 2023<br /> by Jiarui Wu`,
     nprogress: false,
@@ -15,9 +15,9 @@ export default defineConfig({
     nav: [{ title: 'Projects', link: '/projects' },
           { title: 'Contact', children: [{title: 'jwu114@u.rochester.edu'},{title: 'w670699337@gmail.com'}]}],
   },
-  favicons: ['/jerry-portfolio/favicon.ico'],
+  favicons: ['/portfolio/favicon.ico'],
   locales: [{ id: 'en-US', name: 'English'}],
   base: '/portfolio',
-  publicPath: '/jwu114.github.io/portfolio/',
+  publicPath: '/portfolio/',
   exportStatic: {},
 });
