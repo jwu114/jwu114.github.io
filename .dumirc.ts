@@ -17,7 +17,7 @@ export default defineConfig({
   },
   favicons: ['/jerry-portfolio/favicon.ico'],
   locales: [{ id: 'en-US', name: 'English'}],
-  base: '/jerry-portfolio',
+  base: '/jerry-portfolio/',
   publicPath: '/jerry-portfolio/',
   exportStatic: {},
 });

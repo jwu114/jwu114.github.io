@@ -15,7 +15,7 @@ import AnchorButton from '../src/AnchorButton/index';
 export default () =>
 <div>
   <div style={{marginTop: '70px', marginBottom: '70px', textAlign: 'center'}}>
-    <img src='avatar.png' alt='avatar' width='300px'/>
+    <img src='/avatar.png' alt='avatar' width='300px'/>
     <h1> Jiarui Wu </h1>
     <p> CS Junior Student and Teaching Assistant @ University of Rochester</p>
     <ScrollDownButton id='about_me'/>
@@ -29,10 +29,10 @@ export default () =>
     <h1 style={{fontSize:'32px', textAlign:'center'}} id='education'> Education </h1>
     <ul style={{padding: '0px', listStyle: 'none', float: 'left'}}> 
       <li>
-        <img src='bnds_top.png' alt='high school logo' width='200px'/>
+        <img src='/bnds_top.png' alt='high school logo' width='200px'/>
       </li>
       <li>
-        <DarkableImage src='bnds_bottom.png' alt='high school logo' width='200px'/>
+        <DarkableImage src='/bnds_bottom.png' alt='high school logo' width='200px'/>
       </li>
     </ul>
     <p style={{float: 'left', margin:'35px 50px', width:'65%', lineHeight: '2'}}> In 2021, I graduated from Beijing National Day School. It was the place where I began to learn computer science and programming. I took Mathematics, Physics, English, Chinese, Business, and Computer Science courses and completed the International Baccalaureate Diploma Programme (IBDP) here in three years. </p>

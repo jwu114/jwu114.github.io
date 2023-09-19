@@ -31,7 +31,7 @@ import React from 'react';
 export default () =>
 <div style={{marginTop: '30px', marginBottom: '90px', textAlign: 'center'}}> 
     <video width="50%" height="50%" controls >
-      <source src='minesweeper/demo.mp4' type="video/mp4"/>
+      <source src='/minesweeper/demo.mp4' type="video/mp4"/>
     </video>
 </div>
 ```
