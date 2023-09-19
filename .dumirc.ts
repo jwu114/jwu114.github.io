@@ -3,7 +3,7 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   themeConfig: {
     editLink: false,
-    logo: '/logo.png',
+    logo: '/jerry-portfolio/logo.png',
     lastUpdated: false,
     footer: `Copyright © 2023<br /> by Jiarui Wu`,
     nprogress: false,
