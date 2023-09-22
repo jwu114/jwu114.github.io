@@ -1,4 +1,4 @@
-# myapp
+# Personal Website of Jiarui (Jerry) Wu
 
 A static site base on [dumi](https://d.umijs.org).
 
