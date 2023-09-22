@@ -17,7 +17,7 @@ export default defineConfig({
   },
   favicons: ['/portfolio/favicon.ico'],
   locales: [{ id: 'en-US', name: 'English'}],
-  base: '/portfolio',
-  publicPath: '/portfolio/',
+  base: process.env.NODE_ENV === 'production' ? '/portfolio' : '/',
+  publicPath: process.env.NODE_ENV === 'production'? '/portfolio/' : '/',
   exportStatic: {},
 });
