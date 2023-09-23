@@ -161,13 +161,13 @@
 
     &:not(:hover) > .@{prefix}-navbar-dropdown {
       visibility: hidden;
-      opacity: 0;
+      opacity: 1;
       transform: translateY(-6px) scale(0.98);
       transition-delay: 0.1s;
 
       @media @mobile {
         visibility: visible;
-        opacity: 0;
+        opacity: 1;
         transform: none;
       }
     }
