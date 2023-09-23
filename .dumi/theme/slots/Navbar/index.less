@@ -113,8 +113,16 @@
       list-style: none;
       padding: 0;
       margin: 6px 0 0;
+
       border-radius: 6px;
       transition: all 0.2s ease-in-out;
+
+      @media @desktop {
+        background-color: rgba(247, 249, 251);
+        @{dark-selector} & {
+          background-color: @c-site-bg-dark;
+        }
+      }
 
       > li {
         > a {
