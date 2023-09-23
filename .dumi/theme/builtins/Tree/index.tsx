@@ -105,7 +105,7 @@ const renderSwitcherIcon = (props: TreeNodeProps<DataNode>) => {
 // ================== Collapse Motion ==================
 const getCollapsedHeight: MotionEventHandler = () => ({
   height: 0,
-  opacity: 0,
+  opacity: 1,
 });
 const getRealHeight: MotionEventHandler = (node) => {
   const { scrollHeight } = node;
