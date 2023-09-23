@@ -51,7 +51,6 @@
     flex: 1;
     display: flex;
     justify-content: space-between;
-    opacity: 1;
 
     &-aside {
       display: flex;
@@ -81,6 +80,7 @@
       backdrop-filter: blur(30px);
       box-sizing: border-box;
       transition: all 0.2s;
+      background-color: blue;
 
       @{dark-selector} & {
         background-color: fadeout(@c-site-bg-dark, 40%);
