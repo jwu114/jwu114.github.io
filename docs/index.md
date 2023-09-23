@@ -27,7 +27,7 @@ export default () =>
   </div>
   <div style={{overflow: 'hidden', marginTop:'150px', marginLeft:'15%', marginRight:'15%'}}> 
     <h1 style={{fontSize:'32px', textAlign:'center'}} id='education'> Education </h1>
-    <ul style={{marginLeft:'3%', padding: '0px', listStyle: 'none', float: 'left'}}> 
+    <ul style={{marginLeft:'20px', padding: '0px', listStyle: 'none', float: 'left'}}> 
       <li>
         <img src='/portfolio/bnds_top.png' alt='high school logo' width='200px'/>
       </li>
@@ -35,11 +35,11 @@ export default () =>
         <DarkableImage src='/portfolio/bnds_bottom.png' alt='high school logo' width='200px'/>
       </li>
     </ul>
-    <p style={{textAlign: 'left', float: 'left', marginLeft:'3%', marginTop: '4%',  width:'70%', lineHeight: '2'}}> In 2021, I graduated from Beijing National Day School. It was the place where I began to learn computer science and programming. I took Mathematics, Physics, English, Chinese, Business, and Computer Science courses and completed the International Baccalaureate Diploma Programme (IBDP) here in three years. </p>
+    <p style={{textAlign: 'left', float: 'left', marginLeft:'15px', marginTop: '4%',  width:'70%', lineHeight: '2'}}> In 2021, I graduated from Beijing National Day School. It was the place where I began to learn computer science and programming. I took Mathematics, Physics, English, Chinese, Business, and Computer Science courses and completed the International Baccalaureate Diploma Programme (IBDP) here in three years. </p>
   </div>
   <div style={{overflow: 'hidden', marginTop: '50px', marginLeft:'15%', marginRight:'15%', marginBottom: '60px'}}> 
-    <img style={{marginLeft:'3%', float: 'left'}} src='/portfolio/uofr_logo.png' alt='college logo' width='200px'/>
-    <p style={{textAlign: 'left', float: 'left', marginLeft:'3%', marginTop: '4%', width:'70%', lineHeight: '2'}}> I am the class of 2025 at the University of Rochester. As you know, I major in Computer Science and minor in Business here. I took positions in various technology organizations and worked as a Teaching Assistant. I love to learn from different experiences. Finally, I hope to have a great junior year! </p>
+    <img style={{marginLeft:'20px', float: 'left'}} src='/portfolio/uofr_logo.png' alt='college logo' width='200px'/>
+    <p style={{textAlign: 'left', float: 'left', marginLeft:'15px', marginTop: '4%', width:'70%', lineHeight: '2'}}> I am the class of 2025 at the University of Rochester. As you know, I major in Computer Science and minor in Business here. I took positions in various technology organizations and worked as a Teaching Assistant. I love to learn from different experiences. Finally, I hope to have a great junior year! </p>
   </div>
   <AnchorButton href='/portfolio/projects'/>
 </div>
