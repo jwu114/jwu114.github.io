@@ -41,6 +41,6 @@ export default () =>
     <img style={{marginLeft:'40px', float: 'left'}} src='/portfolio/uofr_logo.png' alt='college logo' width='200px'/>
     <p style={{textAlign: 'left', float: 'left', marginLeft:'40px', marginTop: '4%', width:'75%', lineHeight: '2'}}> I am the class of 2024 at the University of Rochester. As you know, I major in Computer Science and minor in Business here. I took positions in various technology organizations and worked as a Teaching Assistant. I love to learn from different experiences. </p>
   </div>
-  <AnchorButton href='/portfolio/projects'/>
+  <--<AnchorButton href='/portfolio/projects'/>-->
 </div>
 ```
