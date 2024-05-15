@@ -17,7 +17,7 @@ export default () =>
   <div style={{marginTop: '70px', marginBottom: '70px', textAlign: 'center'}}>
     <img src='/portfolio/avatar.png' alt='avatar' width='300px'/>
     <h1> Jiarui Wu </h1>
-    <p> CS Junior Student and Teaching Assistant @ University of Rochester</p>
+    <p> CS Student and Teaching Assistant @ University of Rochester</p>
     <ScrollDownButton id='about_me'/>
     <h1 style={{fontSize:'32px', marginTop:'150px'}} id='about_me'> About Me </h1>
   </div>
