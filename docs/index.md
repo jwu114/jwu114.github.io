@@ -22,7 +22,7 @@ export default () =>
     <h1 style={{fontSize:'32px', marginTop:'150px'}} id='about_me'> About Me </h1>
   </div>
   <div style={{marginLeft: '15%', marginRight: '15%', lineHeight: '2'}}> 
-    <p style={{textAlign: 'left'}}> <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> Hi! I'm Jiarui Wu, and you can call me Jerry. I'm a Junior majoring in Computer Science at the University of Rochester. I have taken charge of Computer Science Teaching Assistant in my college for two years. I love programming, and I plan to be a full-stack software engineer in the future. I like listening to music, watching movies, reading books, and playing video games in my spare time. I also have habits of making to-do lists and exercising in gyms. I hope you like my website. </p>
+    <p style={{textAlign: 'left'}}> <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> Hi! I'm Jiarui Wu, and you can call me Jerry. I'm a rising senior majoring in Computer Science at the University of Rochester. I have taken charge of Computer Science Teaching Assistant in my college for two years. I love programming and AI, and I plan to be a full-stack software engineer or AI engineer in the future. I like listening to music, watching movies, reading books, and playing video games in my spare time. I also have habits of making to-do lists and exercising in gyms. </p>
     <ScrollDownButton id='education'/>
   </div>
   <div style={{overflow: 'hidden', marginTop:'150px', marginLeft:'7%', marginRight:'7%'}}> 
@@ -39,7 +39,7 @@ export default () =>
   </div>
   <div style={{overflow: 'hidden', marginTop: '50px', marginLeft:'7%', marginRight:'7%', marginBottom: '60px'}}> 
     <img style={{marginLeft:'40px', float: 'left'}} src='/portfolio/uofr_logo.png' alt='college logo' width='200px'/>
-    <p style={{textAlign: 'left', float: 'left', marginLeft:'40px', marginTop: '4%', width:'75%', lineHeight: '2'}}> I am the class of 2025 at the University of Rochester. As you know, I major in Computer Science and minor in Business here. I took positions in various technology organizations and worked as a Teaching Assistant. I love to learn from different experiences. Finally, I hope to have a great junior year! </p>
+    <p style={{textAlign: 'left', float: 'left', marginLeft:'40px', marginTop: '4%', width:'75%', lineHeight: '2'}}> I am the class of 2024 at the University of Rochester. As you know, I major in Computer Science and minor in Business here. I took positions in various technology organizations and worked as a Teaching Assistant. I love to learn from different experiences. </p>
   </div>
   <AnchorButton href='/portfolio/projects'/>
 </div>
