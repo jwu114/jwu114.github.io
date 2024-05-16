@@ -5,7 +5,7 @@ export default defineConfig({
     editLink: false,
     logo: '/portfolio/logo.png',
     lastUpdated: false,
-    footer: `Copyright © 2023<br /> by Jiarui Wu`,
+    footer: `Copyright © 2024<br /> by Jiarui Wu`,
     nprogress: false,
     prefersColor: { default: 'auto' },
     socialLinks: {
