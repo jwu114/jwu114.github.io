@@ -22,7 +22,7 @@ export default () =>
     <h1 style={{fontSize:'32px', marginTop:'150px'}} id='about_me'> About Me </h1>
   </div>
   <div style={{marginLeft: '15%', marginRight: '15%', lineHeight: '2'}}> 
-    <p style={{textAlign: 'left'}}> <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> Hi! I'm Jiarui Wu, and you can call me Jerry. I'm a rising senior majoring in Computer Science at the University of Rochester. I have taken charge of Computer Science Teaching Assistant in my college for two years. I love programming and AI, and I plan to be a full-stack software engineer or AI engineer in the future. I like listening to music, watching movies, reading books, and playing video games in my spare time. I also have habits of making to-do lists and exercising in gyms. </p>
+    <p style={{textAlign: 'left'}}> <span>&nbsp;&nbsp;&nbsp;&nbsp;</span> Hi! I'm Jiarui Wu, and you can call me Jerry. I'm a senior majoring in Computer Science at the University of Rochester. I have taken charge of Computer Science Teaching Assistant in my college for two years. I love programming and AI, and I plan to be a full-stack software engineer or AI engineer in the future. I like listening to music, watching movies, reading books, and playing video games in my spare time. I also have habits of making to-do lists and exercising in gyms. </p>
     <ScrollDownButton id='education'/>
   </div>
   <div style={{overflow: 'hidden', marginTop:'150px', marginLeft:'7%', marginRight:'7%'}}> 
