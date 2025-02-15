@@ -121,6 +121,18 @@ header {
     border-color: var(--primary-color);
 }
 
+.email {
+    margin-right: 3px;
+}
+.email > svg {
+    height: 18px;
+    width: 18px;
+}
+.email > svg:hover {
+    color: var(--primary-color);
+    fill: var(--primary-color);
+}
+
 /* Navbar */
 nav {
     width: 88%;
@@ -310,8 +322,8 @@ footer {
 /* Scroll-Top Button */
 #scroll-up-button {
     position: fixed;
-    bottom: 150px; 
-    right: 20px;  
+    bottom: 20vh; 
+    right: 1.5vw;  
     z-index: 10;  
 }
 #scroll-up-button > button {
