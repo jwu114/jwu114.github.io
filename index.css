@@ -307,6 +307,28 @@ footer {
     padding: 36px 0;
 }
 
+/* Scroll-Top Button */
+#scroll-up-button {
+    position: fixed;
+    bottom: 150px; 
+    right: 20px;  
+    z-index: 10;  
+}
+#scroll-up-button > button {
+    border: 1.5px solid var(--text-secondary-color);
+    width: 30px;
+    height: 70px;
+    background-color: transparent;
+    margin: 0;
+    background: none;
+    cursor: pointer;
+    color: var(--text-secondary-color);
+}
+#scroll-up-button > button:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
 /* Mobile */
 @media only screen and (max-width: 767px) {
     
