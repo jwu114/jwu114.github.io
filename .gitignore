@@ -1,9 +1,1 @@
-docs/projects/ai_reversi.md
-docs/projects/ai_chess.md
-docs/projects/potato.md
-
-node_modules
-/dist
-.dumi/tmp
-.dumi/tmp-production
 .DS_Store
