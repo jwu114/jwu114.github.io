@@ -271,7 +271,7 @@ nav > li > .navbar-dropdown {
 
 /* Sections */
 main > section {
-    margin-top: 7vh;
+    margin-top: 9vh;
     text-align: left;
     scroll-margin-top: 100px;
 }
@@ -289,11 +289,12 @@ main > section {
 #papers img {
     z-index: -1;
     width: 200px;
-    border-radius: 10%;
+    border-radius: 7px;
     filter: drop-shadow(2px 2px 3px var(--text-note-color));
 }
 .paper {
     display: flex;
+    margin-bottom: 40px;
 }
 .paper-desc {
     margin-left: 30px;
