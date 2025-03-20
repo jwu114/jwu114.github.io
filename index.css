@@ -298,10 +298,11 @@ main > section {
 }
 .paper-desc {
     margin-left: 30px;
-    margin-right: 70px;
+    margin-right: 30px;
 }
 .paper-desc > .paper-links {
     margin-top: 1lh;
+    display: flex;
 }
 .paper-desc > .paper-links:hover {
     margin-top: 1lh;
@@ -315,6 +316,7 @@ main > section {
     padding-bottom: 6px;
     padding-left: 16px;
     padding-right: 16px;
+    margin-right: 12px;
 }
 .paper-desc > .paper-links > a:hover {
     text-decoration: none;
