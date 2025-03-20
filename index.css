@@ -300,6 +300,27 @@ main > section {
     margin-left: 30px;
     margin-right: 70px;
 }
+.paper-desc > .paper-links {
+    margin-top: 1lh;
+}
+.paper-desc > .paper-links:hover {
+    margin-top: 1lh;
+}
+.paper-desc > .paper-links > a {
+    font-size: 12px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.paper-desc > .paper-links > a:hover {
+    text-decoration: none;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
 #teaching-content {
     padding-left: 50px;
 }
