@@ -460,12 +460,6 @@ footer {
     border-color: var(--primary-color);
 }
 
-
-[data-theme="dark"]  .theme {
-
-}
-
-
 [data-theme="dark"] header {
     background-color: var(--site-bg-color);
 }
@@ -508,4 +502,25 @@ footer {
 
 [data-theme="light"] .sun-icon {
     display: none;
+}
+
+/* Default state - hide both icons */
+.sun-icon, .moon-icon {
+    display: none;
+}
+
+/* Show moon icon in light theme */
+:root[data-theme="light"] .moon-icon {
+    display: block;
+}
+:root[data-theme="light"] .sun-icon {
+    display: none;
+}
+
+/* Show sun icon in dark theme */
+:root[data-theme="dark"] .moon-icon {
+    display: none;
+}
+:root[data-theme="dark"] .sun-icon {
+    display: block;
 }

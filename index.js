@@ -27,6 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         html.setAttribute('data-theme', savedTheme);
+    } else {
+        // Set default theme to light
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
     }
     
     themeToggle.addEventListener('click', () => {
