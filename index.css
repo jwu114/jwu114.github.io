@@ -4,17 +4,22 @@
     --text-secondary-color: #4f5866;
     --text-note-color: #8a9099;
     --primary-color: #f9d978;
-    --border-light-color: #e4e9ec;
-
-    --site-bg-dark: #080c11;
-    --text-dark-color: #566171;
-    --text-secondary-dark-color: #6f7b8f;
-    --text-note-dark-color: #a4a8af;
     --primary-dark-color: #f7ca43;
+    --border-color: #e4e9ec;
 
     --content-width: 1392px;
     --header-height: 76px;
     --sidebar-width: 184px;
+}
+
+[data-theme="dark"] {
+    --site-bg-color: #080c11;
+    --text-color: #f7f9fb;
+    --text-secondary-color: #6f7b8f;
+    --text-note-color: #a4a8af;
+    --primary-color: #f7ca43;
+    --primary-dark-color: #f7ca43;
+    --border-color: #1a1f25;
 }
 
 * {
@@ -25,6 +30,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--site-bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 main {
@@ -52,9 +59,8 @@ header {
     position: sticky;
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    width: 100%;
     padding: 0 24px;
-    max-width: var(--content-width);
     height: var(--header-height);
     box-sizing: border-box;
     background-color: var(--site-bg-color);
@@ -62,12 +68,14 @@ header {
 
 .header-left {
     width: var(--sidebar-width);
+    margin-left: 2vw;
 }
 
 .header-right {
     flex: 1;
     display: flex;
     justify-content: space-between;
+    margin-right: 2vw;
 }
 
 .header-right-aside {
@@ -130,6 +138,33 @@ header {
 }
 .email > svg:hover {
     color: var(--primary-color);
+    fill: var(--primary-color);
+}
+
+.theme {
+    margin-left: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+}
+.theme > svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--text-secondary-color);
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.theme > svg:hover {
+    stroke: var(--primary-color);
+}
+.theme > svg circle {
+    fill: var(--text-secondary-color);
+}
+.theme > svg:hover circle {
     fill: var(--primary-color);
 }
 
@@ -326,6 +361,9 @@ main > section {
 #teaching-content {
     padding-left: 50px;
 }
+#teaching-content a {
+    color: var(--primary-dark-color);
+}
 #visitor-map {
     margin-top: 100px;
     width: 200px;
@@ -339,7 +377,7 @@ footer {
     text-align: center;
     width: 90%;
     margin-top: 48px;
-    border-top: 1px solid var(--border-light-color);
+    border-top: 1px solid var(--border-color);
     color: var(--text-note-color);
     font-size: 15px;
     line-height: 26px;
@@ -381,4 +419,93 @@ footer {
 /* Laptop */
 @media only screen and (min-width: 1025px) {
     
+}
+
+
+
+/* Dark mode */
+[data-theme="dark"] .paper-desc > .paper-links > a {
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+[data-theme="dark"] .paper-desc > .paper-links > a:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] #news-content {
+    border-color: var(--text-color);
+    background-color: var(--site-bg-color);
+}
+
+[data-theme="dark"] .icon {
+    color: var(--text-secondary-color);
+    fill: var(--text-secondary-color);
+}
+
+[data-theme="dark"] .linkedin > svg {
+    border-color: var(--text-secondary-color);
+}
+
+[data-theme="dark"] .linkedin > svg:hover {
+    color: var(--primary-color);
+    fill: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+[data-theme="dark"] .theme > svg:hover {
+    color: var(--primary-color);
+    fill: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+[data-theme="dark"]  .theme {
+
+}
+
+
+[data-theme="dark"] header {
+    background-color: var(--site-bg-color);
+}
+
+[data-theme="dark"] #scroll-up-button > button {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] #scroll-up-button > button:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .scroll-down-button > button > svg {
+    color: var(--text-color);
+    fill: var(--text-color);
+}
+
+[data-theme="dark"] .scroll-down-button > button > svg:hover {
+    color: var(--primary-color);
+    fill: var(--primary-color);
+}
+
+[data-theme="dark"] #papers img {
+    filter: none;
+}
+
+[data-theme="dark"] .moon-icon {
+    display: none;
+}
+
+[data-theme="dark"] .sun-icon {
+    display: block;
+}
+
+[data-theme="light"] .moon-icon {
+    display: block;
+}
+
+[data-theme="light"] .sun-icon {
+    display: none;
 }
