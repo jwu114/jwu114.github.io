@@ -488,22 +488,6 @@ footer {
     filter: none;
 }
 
-[data-theme="dark"] .moon-icon {
-    display: none;
-}
-
-[data-theme="dark"] .sun-icon {
-    display: block;
-}
-
-[data-theme="light"] .moon-icon {
-    display: block;
-}
-
-[data-theme="light"] .sun-icon {
-    display: none;
-}
-
 /* Default state - hide both icons */
 .sun-icon, .moon-icon {
     display: none;
