@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jwu114.github.io/sitemap.xml 
