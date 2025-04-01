@@ -18,21 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check on scroll
     window.addEventListener('scroll', updateScrollButtonVisibility);
 
-    // Handle smooth scrolling for anchor links
-    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').slice(1);
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 100,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-
     button1.addEventListener("click", scrollDown);
     button2.addEventListener("click", scrollUp);
 
@@ -50,6 +35,21 @@ document.addEventListener('DOMContentLoaded', () => {
             window.scrollTo({top: 0, behavior: "smooth"});
         }
     }
+
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+                window.history.pushState(null, null, targetId);
+            }
+        });
+    });
 
     // Theme functionality (dark / light mode)
     const themeToggle = document.getElementById('theme-toggle');

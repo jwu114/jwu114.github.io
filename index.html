@@ -9,6 +9,11 @@
         <title>Jiarui Wu</title>
         <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
         <link href="index.css" rel="stylesheet" type="text/css">
+        <script>
+            // Set theme before page loads
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        </script>
         <script src="index.js"></script>
     </head>
     <body>

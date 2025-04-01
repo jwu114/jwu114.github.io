@@ -3,8 +3,8 @@
     --text-color: #30363f;
     --text-secondary-color: #4f5866;
     --text-note-color: #8a9099;
-    --primary-color: #f9d978;
-    --primary-dark-color: #f7ca43;
+    --primary-color: #2b7de9;
+    --primary-dark-color: #2b7de9;
     --border-color: #e4e9ec;
 
     --content-width: 1392px;
@@ -15,7 +15,7 @@
 [data-theme="dark"] {
     --site-bg-color: #080c11;
     --text-color: #f7f9fb;
-    --text-secondary-color: #6f7b8f;
+    --text-secondary-color: #a4a8af;
     --text-note-color: #a4a8af;
     --primary-color: #f7ca43;
     --primary-dark-color: #f7ca43;
@@ -102,6 +102,7 @@ header {
 .logo > a > img {
     margin-inline-end: 10px;
     height: 40px;
+    filter: invert(62%) sepia(83%) saturate(5959%) hue-rotate(201deg) brightness(97%) contrast(89%);
 }
 
 /* Icon */
@@ -462,8 +463,8 @@ footer {
 }
 
 [data-theme="dark"] #scroll-up-button > button {
-    border-color: var(--text-color);
-    color: var(--text-color);
+    border-color: var(--text-secondary-color);
+    color: var(--text-secondary-color);
 }
 
 [data-theme="dark"] #scroll-up-button > button:hover {
@@ -504,4 +505,8 @@ footer {
 }
 :root[data-theme="dark"] .sun-icon {
     display: block;
+}
+
+[data-theme="dark"] .logo > a > img {
+    filter: none;
 }
