@@ -1,7 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
     const button1 = document.getElementById("scrollDownButton");
     const button2 = document.getElementById("scrollUpButton");
+    const scrollUpContainer = document.getElementById("scroll-up-button");
 
+    // Function to check scroll position and update button visibility
+    function updateScrollButtonVisibility() {
+        if (window.scrollY > 100) {
+            scrollUpContainer.style.display = 'block';
+        } else {
+            scrollUpContainer.style.display = 'none';
+        }
+    }
+
+    // Initial check when page loads
+    updateScrollButtonVisibility();
+
+    // Check on scroll
+    window.addEventListener('scroll', updateScrollButtonVisibility);
     button1.addEventListener("click", scrollDown);
     button2.addEventListener("click", scrollUp);
 
