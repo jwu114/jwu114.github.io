@@ -276,23 +276,26 @@ nav > li > .navbar-dropdown {
 /* Home */
 #home {
     text-align: center;
-    margin-top: 12vh; 
+    margin-top: 3vh; 
     margin-bottom: 10vh;
 }
 #home > .avatar {
     width: 300px;
 }
 #home-title {
-    margin-top: 20px;
+    margin-top: 3vh;
 }
 #home-desc {
-    margin-top: 20px;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    text-align: left;
+    margin-top: 7vh;
 }
 
 /* Scroll-Down Button */
 .scroll-down-button {
-    margin-top: 20vh;
-    margin-bottom: 30vh;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
     text-align: center;
 }
 .scroll-down-button > button {
