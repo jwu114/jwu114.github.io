@@ -112,6 +112,7 @@ header {
     background: transparent;
     color: var(--text-secondary-color);
     fill: var(--text-secondary-color);
+    margin-left: 2px;
 }
 .github > svg:hover {
     color: var(--primary-color);
@@ -131,7 +132,8 @@ header {
 }
 
 .email {
-    margin-right: 3px;
+    margin-right: 0;
+    margin-left: 12px;
 }
 .email > svg {
     height: 18px;
@@ -178,6 +180,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 6px;
 }
 
 nav > li {
@@ -186,6 +189,7 @@ nav > li {
     line-height: 3;
     text-align: center;
     position: relative;
+    margin-left: 1px;
 }
 
 header a {
@@ -495,24 +499,75 @@ footer {
     filter: none;
 }
 
-/* Default state - hide both icons */
-.sun-icon, .moon-icon {
-    display: none;
+/* Theme Toggle */
+.theme-toggle {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background: var(--bg-color);
+    border: 2px solid #4f5866;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    margin-left: 24px;
 }
 
-/* Show moon icon in light theme */
-:root[data-theme="light"] .moon-icon {
+.theme-toggle .moon-icon,
+.theme-toggle .sun-icon {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    transition: all 0.3s ease;
+    z-index: 2;
+    color: #e4e9ec;
+}
+
+.theme-toggle .moon-icon {
+    right: 4px;
+}
+
+.theme-toggle .sun-icon {
+    left: 4px;
+}
+
+.theme-toggle::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #4f5866;
+    border-radius: 50%;
+    left: 2px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+[data-theme="dark"] .theme-toggle {
+    border-color: #a4a8af;
+}
+
+[data-theme="dark"] .theme-toggle::before {
+    transform: translateX(20px);
+    background: #a4a8af;
+}
+
+/* Show only sun icon in light theme */
+.sun-icon {
     display: block;
 }
-:root[data-theme="light"] .sun-icon {
+.moon-icon {
     display: none;
 }
 
-/* Show sun icon in dark theme */
-:root[data-theme="dark"] .moon-icon {
+/* Show only moon icon in dark theme */
+[data-theme="dark"] .sun-icon {
     display: none;
 }
-:root[data-theme="dark"] .sun-icon {
+[data-theme="dark"] .moon-icon {
     display: block;
 }
 
