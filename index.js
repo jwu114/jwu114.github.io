@@ -71,4 +71,40 @@ document.addEventListener('DOMContentLoaded', () => {
         html.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
     });
+
+    // Scroll Down Button
+    const scrollDownButton = document.getElementById('scrollDownButton');
+    scrollDownButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        });
+    });
+
+    // Scroll Up Button
+    const scrollUpButton = document.getElementById('scrollUpButton');
+    scrollUpButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Paper Info Buttons
+    document.querySelectorAll('.info-button').forEach(button => {
+        const infoType = button.getAttribute('data-info');
+        const paperInfo = button.closest('.paper-desc').querySelector(`.paper-info.${infoType}`);
+
+        button.addEventListener('mousedown', () => {
+            paperInfo.style.display = 'block';
+        });
+
+        button.addEventListener('mouseup', () => {
+            paperInfo.style.display = 'none';
+        });
+
+        button.addEventListener('mouseleave', () => {
+            paperInfo.style.display = 'none';
+        });
+    });
 })
