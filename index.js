@@ -116,14 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (papersWrapper && prevButton && nextButton) {
         let currentIndex = 0;
-        let isScrolling = false;
-        
-        // Set initial scroll position to compensate for left padding
-        papersWrapper.scrollLeft = 44; // Match the left padding value
         
         function updateButtons() {
-            if (isScrolling) return;
-            
             if (currentIndex === 0) {
                 prevButton.classList.remove('visible');
             } else {
@@ -138,27 +132,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         function scrollToPaper(index) {
-            isScrolling = true;
-            prevButton.classList.remove('visible');
-            nextButton.classList.remove('visible');
-            
             const paper = papers[index];
             papersWrapper.scrollTo({
                 left: paper.offsetLeft - papersWrapper.offsetLeft,
                 behavior: 'smooth'
             });
-            
-            // Wait for scroll to complete
-            setTimeout(() => {
-                isScrolling = false;
-                updateButtons();
-            }, 500); // Adjust timing based on your scroll duration
         }
         
         prevButton.addEventListener('click', () => {
             if (currentIndex > 0) {
                 currentIndex--;
                 scrollToPaper(currentIndex);
+                updateButtons();
             }
         });
         
@@ -166,6 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentIndex < papers.length - 1) {
                 currentIndex++;
                 scrollToPaper(currentIndex);
+                updateButtons();
             }
         });
         
