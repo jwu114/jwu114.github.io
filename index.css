@@ -336,7 +336,6 @@ main > section {
 }
 #papers img {
     z-index: -1;
-    width: 200px;
     border-radius: 7px;
     filter: drop-shadow(2px 2px 3px var(--text-note-color));
 }
@@ -451,14 +450,69 @@ footer {
         margin-top: 10vh;
     }
 
+    #papers h2 {
+        margin-bottom: 5px;
+    }
+
     .papers-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 20px 0;
+        margin: 0 -10px;
+    }
+
+    .papers-wrapper {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        padding: 20px 0;
-        margin: 0 -10px;
         gap: 100px;
+        width: 100%;
+        padding: 0 44px;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+    }
+
+    .papers-wrapper::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
+    .nav-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1;
+        color: var(--text-secondary-color);
+        transition: color 0.3s ease;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0; /* Initially hidden */
+        pointer-events: none; /* Initially not clickable */
+    }
+
+    .nav-button.visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-button:hover {
+        color: var(--primary-color);
+    }
+
+    .nav-button svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .prev-button {
+        left: 0;
+    }
+
+    .next-button {
+        right: 0;
     }
 
     .paper {
@@ -476,11 +530,13 @@ footer {
         margin-bottom: 20px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        height: 200px;
     }
 
     .paper-image img {
-        width: 100%;
-        height: auto;
+        max-height: 200px;
+        width: auto;
         border-radius: 7px;
     }
 
@@ -602,6 +658,12 @@ footer {
 
     .paper-links > button {
         display: none !important;
+    }
+
+    .paper-image img {
+        width: 200px;
+        height: auto;
+        border-radius: 7px;
     }
 }
 

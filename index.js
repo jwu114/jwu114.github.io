@@ -107,4 +107,77 @@ document.addEventListener('DOMContentLoaded', () => {
             paperInfo.style.display = 'none';
         });
     });
+
+    // Paper navigation in tablet mode
+    const papersWrapper = document.querySelector('.papers-wrapper');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    const papers = document.querySelectorAll('.paper');
+    
+    if (papersWrapper && prevButton && nextButton) {
+        let currentIndex = 0;
+        let isScrolling = false;
+        
+        // Set initial scroll position to compensate for left padding
+        papersWrapper.scrollLeft = 44; // Match the left padding value
+        
+        function updateButtons() {
+            if (isScrolling) return;
+            
+            if (currentIndex === 0) {
+                prevButton.classList.remove('visible');
+            } else {
+                prevButton.classList.add('visible');
+            }
+            
+            if (currentIndex === papers.length - 1) {
+                nextButton.classList.remove('visible');
+            } else {
+                nextButton.classList.add('visible');
+            }
+        }
+        
+        function scrollToPaper(index) {
+            isScrolling = true;
+            prevButton.classList.remove('visible');
+            nextButton.classList.remove('visible');
+            
+            const paper = papers[index];
+            papersWrapper.scrollTo({
+                left: paper.offsetLeft - papersWrapper.offsetLeft,
+                behavior: 'smooth'
+            });
+            
+            // Wait for scroll to complete
+            setTimeout(() => {
+                isScrolling = false;
+                updateButtons();
+            }, 500); // Adjust timing based on your scroll duration
+        }
+        
+        prevButton.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                scrollToPaper(currentIndex);
+            }
+        });
+        
+        nextButton.addEventListener('click', () => {
+            if (currentIndex < papers.length - 1) {
+                currentIndex++;
+                scrollToPaper(currentIndex);
+            }
+        });
+        
+        // Update buttons on scroll
+        papersWrapper.addEventListener('scroll', () => {
+            const scrollLeft = papersWrapper.scrollLeft;
+            const paperWidth = papers[0].offsetWidth + 100; // 100px gap
+            currentIndex = Math.round(scrollLeft / paperWidth);
+            updateButtons();
+        });
+        
+        // Initial button state
+        updateButtons();
+    }
 })
