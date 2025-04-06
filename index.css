@@ -614,13 +614,9 @@ footer {
     }
 
     .paper-info p {
-        margin: 0 0 8px 0;
+        margin: 0;
         padding: 0 10px;
         line-height: 1.4;
-    }
-
-    .paper-info p:last-child {
-        margin-bottom: 0;
     }
 
     /* Hide scrollbar but keep functionality */
@@ -639,6 +635,15 @@ footer {
 
     #teaching-content {
         margin-bottom: 30px;
+    }
+
+    main p {
+        margin-bottom: 1em;
+        line-height: 1.6;
+    }
+
+    .paper-desc > p:not(:first-child) {
+        margin-bottom: 1em;
     }
 }
 
@@ -827,13 +832,9 @@ footer {
     }
 
     .paper-info p {
-        margin: 0 0 8px 0;
+        margin: 0;
         padding: 0 10px;
         line-height: 1.4;
-    }
-
-    .paper-info p:last-child {
-        margin-bottom: 0;
     }
 
     /* Hide scrollbar but keep functionality */
@@ -843,6 +844,15 @@ footer {
     .papers-container {
         -ms-overflow-style: none;
         scrollbar-width: none;
+    }
+
+    main p {
+        margin-bottom: 1em;
+        line-height: 1.6;
+    }
+
+    .paper-desc > p:not(:first-child) {
+        margin-bottom: 1em;
     }
 }
 
