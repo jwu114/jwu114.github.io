@@ -371,7 +371,7 @@ main > section {
 }
 #teaching-content {
     padding-left: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 #teaching-content a {
     color: var(--primary-dark-color);
@@ -393,7 +393,6 @@ footer {
     margin: 0 auto;
     text-align: center;
     width: 90%;
-    margin-top: 48px;
     border-top: 1px solid var(--border-color);
     color: var(--text-note-color);
     font-size: 15px;
@@ -425,7 +424,218 @@ footer {
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+    main {
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    main > section {
+        margin-top: 3vh;
+        text-align: left;
+        scroll-margin-top: 100px;
+    }
+
+    footer {
+        margin-top: 0px;
+        padding: 24px 0;
+    }
+
+    #home {
+        margin-bottom: 0;
+        min-height: 0;
+    }
+
+    #news-content { 
+        height: 150px;
+    }
     
+    .scroll-down-button {
+        display: none;
+    }
+
+    /* Papers Section Redesign */
+    #papers h2 {
+        margin-bottom: 5px;
+    }
+
+    .papers-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 20px 0;
+        margin: 0 auto;
+        max-width: 90vw;
+    }
+
+    .papers-wrapper {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 5vw;
+        width: 100%;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding: 0 2vw 22px 2vw;
+    }
+
+    .papers-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1;
+        color: var(--text-secondary-color);
+        transition: color 0.3s ease;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .nav-button.visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-button:hover {
+        color: var(--primary-color);
+    }
+
+    .nav-button svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .prev-button {
+        left: 0;
+    }
+
+    .next-button {
+        right: 0;
+    }
+
+    .paper {
+        flex: 0 0 85%;
+        scroll-snap-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2vw;
+    }
+
+    .paper-image {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 180px;
+    }
+
+    .paper-image img {
+        max-height: 180px;
+        width: auto;
+        border-radius: 7px;
+    }
+
+    .paper-desc {
+        text-align: center;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .paper-desc > p:first-child {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .desktop-content {
+        display: none;
+    }
+
+    .tablet-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .paper-links {
+        display: flex;
+        gap: 8px;
+        margin-top: 8px;
+        justify-content: center;
+        position: relative;
+    }
+
+    .paper-links > a,
+    .paper-links > button {
+        font-size: 10px !important;
+        color: var(--text-color);
+        border: 1px solid var(--text-color);
+        border-radius: 3px;
+        padding: 3px 10px;
+        text-decoration: none;
+        background: none;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+
+    .paper-links > a:hover,
+    .paper-links > button:hover {
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+    .paper-info {
+        display: none;
+        font-size: 12px;
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 8px 0;
+        z-index: 1;
+        margin: 0;
+        color: var(--primary-color);
+        white-space: normal;
+        word-wrap: break-word;
+        max-width: 100%;
+        min-height: 40px;
+    }
+
+    .paper-info p {
+        margin: 0;
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+
+    /* Hide scrollbar but keep functionality */
+    .papers-container::-webkit-scrollbar {
+        display: none;
+    }
+    .papers-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    #scroll-up-button,
+    #scroll-up-button > button {
+        display: none !important;
+    }
+
+    #teaching-content {
+        margin-bottom: 30px;
+    }
 }
 
 /* Tablet */
@@ -443,6 +653,10 @@ footer {
     
     .scroll-down-button {
         display: none;
+    }
+
+    #teaching-content {
+        margin-bottom: 60px;
     }
 
     /* Papers Section Redesign */
