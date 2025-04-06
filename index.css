@@ -645,6 +645,76 @@ footer {
     .paper-desc > p:not(:first-child) {
         margin-bottom: 1em;
     }
+
+    /* Hide nav links in mobile mode */
+    nav > li:not(.hamburger-menu) {
+        display: none;
+    }
+
+    /* Keep the nav container visible */
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    /* Hamburger menu styles */
+    .hamburger-menu {
+        display: block !important;
+        margin-left: 18px;
+        position: relative;
+    }
+
+    .hamburger-button {
+        background: none;
+        border: none;
+        padding: 6px;
+        cursor: pointer;
+        color: var(--text-secondary-color);
+        transition: color 0.3s ease;
+        display: flex;
+        align-items: center;
+    }
+
+    .hamburger-button:hover {
+        color: var(--primary-color);
+    }
+
+    .hamburger-button svg {
+        width: 30px;
+        height: 30px;
+        stroke-width: 1.5;
+    }
+
+    .hamburger-dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: var(--site-bg-color);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 12px;
+        display: none;
+        min-width: 120px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .hamburger-dropdown.active {
+        display: block;
+    }
+
+    .hamburger-dropdown a {
+        display: block;
+        padding: 8px 12px;
+        color: var(--text-secondary-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        font-size: 14px;
+    }
+
+    .hamburger-dropdown a:hover {
+        color: var(--primary-color);
+    }
 }
 
 /* Tablet */
@@ -854,6 +924,11 @@ footer {
     .paper-desc > p:not(:first-child) {
         margin-bottom: 1em;
     }
+
+    /* Show nav links in tablet mode */
+    nav > li {
+        display: block;
+    }
 }
 
 /* Laptop */
@@ -924,6 +999,11 @@ footer {
 
     .nav-button {
         display: none !important;
+    }
+
+    /* Show nav links in desktop mode */
+    nav > li {
+        display: block;
     }
 }
 
@@ -1089,4 +1169,11 @@ footer {
     color: var(--primary-color);
     border-color: var(--primary-color);
     text-decoration: none;
+}
+
+/* Tablet and Desktop */
+@media only screen and (min-width: 768px) {
+    .hamburger-menu {
+        display: none !important;
+    }
 }
