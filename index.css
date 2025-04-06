@@ -626,7 +626,6 @@ footer {
     .papers-container {
         -ms-overflow-style: none;
         scrollbar-width: none;
-        border: 1px solid red;
     }
 
     #scroll-up-button,
