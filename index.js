@@ -91,20 +91,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Paper Info Buttons
-    document.querySelectorAll('.info-button').forEach(button => {
-        const infoType = button.getAttribute('data-info');
-        const paperInfo = button.closest('.paper-desc').querySelector(`.paper-info.${infoType}`);
-
-        button.addEventListener('mousedown', () => {
+    const infoButtons = document.querySelectorAll('.info-button');
+    infoButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const infoType = button.getAttribute('data-info');
+            const paperInfo = button.closest('.paper-desc').querySelector(`.paper-info.${infoType}`);
+            
+            // If the clicked info is already visible, hide it
+            if (paperInfo.style.display === 'block') {
+                paperInfo.style.display = 'none';
+                return;
+            }
+            
+            // Otherwise, hide all paper info first
+            document.querySelectorAll('.paper-info').forEach(info => {
+                info.style.display = 'none';
+            });
+            
+            // Then show the clicked paper info
             paperInfo.style.display = 'block';
-        });
-
-        button.addEventListener('mouseup', () => {
-            paperInfo.style.display = 'none';
-        });
-
-        button.addEventListener('mouseleave', () => {
-            paperInfo.style.display = 'none';
         });
     });
 
