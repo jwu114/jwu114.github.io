@@ -286,6 +286,7 @@ nav > li > .navbar-dropdown {
 #home > .avatar {
     width: 300px;
     margin: 0 auto;
+    background-color: var(--site-bg-color);
 }
 #home-title {
     margin-top: 3vh;
@@ -1389,4 +1390,38 @@ footer {
     .paper-info {
         font-size: 12px;
     }
+}
+
+[data-theme="dark"] #home > .avatar {
+    mix-blend-mode: screen;
+    filter: brightness(0.9) contrast(1.1);
+}
+
+.avatar-dark {
+    display: none;
+}
+
+[data-theme="dark"] .avatar-bright {
+    display: none;
+}
+
+[data-theme="dark"] .avatar-dark {
+    display: block;
+}
+
+.avatar-bright {
+    display: block;
+    mix-blend-mode: multiply;
+}
+
+.avatar-dark {
+    display: none;
+}
+
+[data-theme="dark"] .avatar-bright {
+    display: none;
+}
+
+[data-theme="dark"] .avatar-dark {
+    display: block;
 }
