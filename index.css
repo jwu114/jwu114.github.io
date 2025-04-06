@@ -464,7 +464,7 @@ footer {
         position: relative;
         padding: 20px 0;
         margin: 0 auto;
-        max-width: 90vw;
+        max-width: 100vw;
     }
 
     .papers-wrapper {
@@ -476,7 +476,7 @@ footer {
         width: 100%;
         scrollbar-width: none;
         -ms-overflow-style: none;
-        padding: 0 2vw 22px 2vw;
+        padding: 0 2vw 48px 2vw;
     }
 
     .papers-wrapper::-webkit-scrollbar {
@@ -531,7 +531,7 @@ footer {
 
     .paper-image {
         width: 100%;
-        max-width: 300px;
+        max-width: 260px;
         margin-bottom: 15px;
         display: flex;
         justify-content: center;
@@ -547,12 +547,12 @@ footer {
 
     .paper-desc {
         text-align: center;
-        max-width: 300px;
+        max-width: 260px;
         width: 100%;
     }
 
     .paper-desc > p:first-child {
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 0px;
     }
 
@@ -582,7 +582,7 @@ footer {
         color: var(--text-color);
         border: 1px solid var(--text-color);
         border-radius: 3px;
-        padding: 3px 8px !important;
+        padding: 3px 6px !important;
         text-decoration: none;
         background: none;
         cursor: pointer;
@@ -694,7 +694,7 @@ footer {
         width: 100%;
         scrollbar-width: none;
         -ms-overflow-style: none;
-        padding: 0 2vw 6px 2vw;
+        padding: 0 2vw 18px 2vw;
     }
 
     .papers-wrapper::-webkit-scrollbar {

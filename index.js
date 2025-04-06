@@ -171,4 +171,28 @@ document.addEventListener('DOMContentLoaded', () => {
         // Initial button state
         updateButtons();
     }
+
+    // 处理导航按钮点击
+    document.querySelectorAll('.nav-button').forEach(button => {
+        button.addEventListener('click', () => {
+            // 先隐藏所有按钮
+            document.querySelectorAll('.nav-button').forEach(btn => {
+                btn.classList.remove('visible');
+            });
+            
+            const wrapper = document.querySelector('.papers-wrapper');
+            const scrollAmount = wrapper.clientWidth;
+            const scrollDirection = button.classList.contains('prev-button') ? -1 : 1;
+            
+            wrapper.scrollBy({
+                left: scrollAmount * scrollDirection,
+                behavior: 'smooth'
+            });
+            
+            // 延迟一段时间后再显示按钮
+            setTimeout(() => {
+                updateButtons();
+            }, 500);
+        });
+    });
 })
