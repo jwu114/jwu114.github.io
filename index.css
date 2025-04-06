@@ -423,7 +423,8 @@ footer {
 }
 
 /* Mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px),
+       only screen and (max-height: 767px) and (orientation: landscape) {
     main {
         margin-left: 3vw;
         margin-right: 3vw;
@@ -438,6 +439,11 @@ footer {
     footer {
         margin-top: 0px;
         padding: 24px 0;
+    }
+
+    #scroll-up-button,
+    #scroll-up-button > button {
+        display: none !important;
     }
 
     #home {
@@ -626,11 +632,6 @@ footer {
     .papers-container {
         -ms-overflow-style: none;
         scrollbar-width: none;
-    }
-
-    #scroll-up-button,
-    #scroll-up-button > button {
-        display: none !important;
     }
 
     #teaching-content {
