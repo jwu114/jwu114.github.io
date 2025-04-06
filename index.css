@@ -423,8 +423,7 @@ footer {
 }
 
 /* Mobile */
-@media only screen and (max-width: 767px) and (orientation: portrait),
-       only screen and (max-height: 767px) and (orientation: landscape) {
+@media only screen and (max-width: 767px) {
     main {
         margin-left: 3vw;
         margin-right: 3vw;
@@ -439,11 +438,6 @@ footer {
     footer {
         margin-top: 0px;
         padding: 24px 0;
-    }
-
-    #scroll-up-button,
-    #scroll-up-button > button {
-        display: none !important;
     }
 
     #home {
@@ -634,14 +628,18 @@ footer {
         scrollbar-width: none;
     }
 
+    #scroll-up-button,
+    #scroll-up-button > button {
+        display: none !important;
+    }
+
     #teaching-content {
         margin-bottom: 30px;
     }
 }
 
 /* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait),
-       only screen and (min-height: 768px) and (max-height: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
     main {
         margin-left: 10vw;
         margin-right: 10vw;
@@ -841,7 +839,7 @@ footer {
 }
 
 /* Laptop */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1200px) {
     .desktop-content {
         display: block;
     }
