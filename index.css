@@ -426,8 +426,8 @@ footer {
 /* Mobile */
 @media only screen and (max-width: 767px) {
     main {
-        margin-left: 3vw;
-        margin-right: 3vw;
+        margin-left: 8vw;
+        margin-right: 8vw;
     }
 
     main > section {
@@ -444,6 +444,11 @@ footer {
     #home {
         margin-bottom: 0;
         min-height: 0;
+    }
+
+    #home-desc {
+        margin-left: 0vw;
+        margin-right: 0vw;
     }
 
     #news-content { 
@@ -728,6 +733,11 @@ footer {
     #home {
         margin-bottom: 0;
         min-height: 0;
+    }
+
+    #home-desc {
+        margin-left: 0vw;
+        margin-right: 0vw;
     }
     
     .scroll-down-button {
