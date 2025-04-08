@@ -940,20 +940,8 @@ footer {
         display: block;
     }
 
-    #scroll-up-button > button {
-        border: 1.5px solid var(--text-secondary-color);
-        width: 30px;
-        height: 70px;
-        background-color: transparent;
-        margin: 0;
-        background: none;
-        cursor: pointer;
-        color: var(--text-secondary-color);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        line-height: 1.2;
+    #scroll-up-button {
+        display: none !important;
     }
 }
 
