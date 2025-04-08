@@ -539,8 +539,8 @@ footer {
 
     .paper-image {
         width: 100%;
-        max-width: 260px;
-        margin-bottom: 15px;
+        max-width: 300px;
+        margin-bottom: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -548,14 +548,14 @@ footer {
     }
 
     .paper-image img {
-        max-height: 180px;
+        max-height: 160px;
         width: auto;
         border-radius: 7px;
     }
 
     .paper-desc {
         text-align: center;
-        max-width: 260px;
+        max-width: 280px;
         width: 100%;
     }
 
