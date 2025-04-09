@@ -1019,59 +1019,6 @@ footer {
     nav > li {
         display: block;
     }
-
-    /* Desktop mode author list truncation */
-    .paper-desc .desktop-content p:first-of-type {
-        display: block;
-        max-height: 2lh;
-        overflow: hidden;
-        position: relative;
-        transition: all 0.3s ease;
-        cursor: default;
-        pointer-events: none;
-    }
-
-    .paper-desc .desktop-content p:first-of-type.expanded {
-        max-height: none;
-        cursor: default;
-        pointer-events: none;
-    }
-
-    .paper-desc .desktop-content .expand-button {
-        display: none;
-        background: none;
-        border: none;
-        color: var(--text-secondary-color);
-        cursor: pointer;
-        padding: 0;
-        font-size: inherit;
-        margin-left: 8px;
-        position: absolute;
-        right: 0;
-        bottom: -4px;
-        background: var(--site-bg-color);
-        pointer-events: auto;
-        transition: color 0.3s ease;
-    }
-
-    .paper-desc .desktop-content .expand-button:hover,
-    .paper-desc .desktop-content .expand-button:active {
-        color: var(--primary-color);
-    }
-
-    /* 只在内容超过两行时显示展开按钮 */
-    .paper-desc .desktop-content p:first-of-type:not(.expanded) .expand-button {
-        display: inline;
-    }
-
-    /* 展开状态下显示收起按钮 */
-    .paper-desc .desktop-content p:first-of-type.expanded .expand-button {
-        display: inline;
-    }
-
-    .paper-desc .desktop-content p:first-of-type.expanded .expand-button::before {
-        content: "▲";
-    }
 }
 
 /* Dark mode */
@@ -1491,4 +1438,33 @@ footer {
 
 [data-theme="dark"] .avatar-dark {
     display: block;
+}
+
+.other-authors {
+    display: none;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.other-authors:hover {
+    color: var(--primary-color);
+}
+
+.other-authors.visible {
+    display: inline;
+}
+
+.ellipsis {
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.ellipsis:hover {
+    color: var(--primary-color);
+}
+
+.ellipsis.hidden {
+    display: none;
 }

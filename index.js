@@ -231,41 +231,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 处理论文作者列表的展开/收起
-    document.querySelectorAll('.paper-desc .desktop-content p:first-of-type').forEach(paragraph => {
-        // 检查内容是否超过两行
-        const lineHeight = parseInt(window.getComputedStyle(paragraph).lineHeight);
-        const contentHeight = paragraph.scrollHeight;
-        
-        if (contentHeight > lineHeight * 2) {
-            // 添加展开按钮
-            const expandButton = document.createElement('button');
-            expandButton.className = 'expand-button';
-            expandButton.textContent = '▼';
-            paragraph.appendChild(expandButton);
-            
-            // 初始状态：收起
-            paragraph.style.maxHeight = '2lh';
-            expandButton.style.display = 'inline';
-            
-            // 点击展开按钮
-            expandButton.addEventListener('click', (e) => {
-                e.stopPropagation();
-                paragraph.style.maxHeight = 'none';
-                paragraph.classList.add('expanded');
-                expandButton.textContent = '▲';
-                expandButton.style.display = 'none';
-            });
-            
-            // 点击段落收起
-            paragraph.addEventListener('click', () => {
-                if (paragraph.style.maxHeight === 'none') {
-                    paragraph.style.maxHeight = '2lh';
-                    paragraph.classList.remove('expanded');
-                    expandButton.textContent = '▼';
-                    expandButton.style.display = 'inline';
-                }
-            });
-        }
+    // Handle ellipsis and other-authors click for paper3 authors
+    const ellipsisElements = document.querySelectorAll('.ellipsis');
+    const otherAuthorsElements = document.querySelectorAll('.other-authors');
+    
+    ellipsisElements.forEach(ellipsis => {
+        ellipsis.addEventListener('click', () => {
+            const otherAuthors = ellipsis.nextElementSibling;
+            if (otherAuthors.classList.contains('other-authors')) {
+                otherAuthors.classList.add('visible');
+                ellipsis.classList.add('hidden');
+            }
+        });
+    });
+
+    otherAuthorsElements.forEach(otherAuthors => {
+        otherAuthors.addEventListener('click', () => {
+            otherAuthors.classList.remove('visible');
+            const ellipsis = otherAuthors.previousElementSibling;
+            if (ellipsis.classList.contains('ellipsis')) {
+                ellipsis.classList.remove('hidden');
+            }
+        });
     });
 })
