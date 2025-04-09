@@ -540,7 +540,7 @@ footer {
     .paper-image {
         width: 100%;
         max-width: 300px;
-        margin-bottom: 0px;
+        margin-bottom: -15px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -548,7 +548,7 @@ footer {
     }
 
     .paper-image img {
-        max-height: 140px;
+        max-height: 124px;
         width: auto;
         border-radius: 7px;
     }
