@@ -172,10 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
         updateButtons();
     }
 
-    // 处理导航按钮点击
+    // Handle navigation button clicks
     document.querySelectorAll('.nav-button').forEach(button => {
         button.addEventListener('click', () => {
-            // 先隐藏所有按钮
+            // Hide all buttons first
             document.querySelectorAll('.nav-button').forEach(btn => {
                 btn.classList.remove('visible');
             });
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 behavior: 'smooth'
             });
             
-            // 延迟一段时间后再显示按钮
+            // Show buttons again after a delay
             setTimeout(() => {
                 updateButtons();
             }, 500);
