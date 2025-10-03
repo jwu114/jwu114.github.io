@@ -144,6 +144,19 @@ header {
     fill: var(--primary-color);
 }
 
+.academic {
+    margin-bottom: 8px;
+    margin-left: -2px
+}
+.academic > svg {
+    height: 28px;
+    width: 28px;
+}
+.academic > svg:hover {
+    color: var(--primary-color);
+    fill: var(--primary-color);
+}
+
 .theme {
     margin-left: 6px;
     background: none;
